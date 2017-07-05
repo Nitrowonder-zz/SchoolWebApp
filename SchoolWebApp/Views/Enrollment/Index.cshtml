@@ -1,0 +1,24 @@
+﻿<script src="~/Scripts/Services/EnrollmentController.js"></script>
+<script>
+    @*$(document).ready(function () {
+        GetStudents('@Url.Action("", "api/Students")');
+    });*@
+</script>
+<div class="container">
+    <h3 class="text-center">Select a student to view and edit their course selection</h3>
+    <select id="StudentSelect" onchange="GetCourseStatuses();" class="form-control center-block"></select>
+    <br /><br /><br />
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-sm-2">ID</div>
+                <div class="col-sm-2">Course Name</div>
+                <div class="col-sm-2">Max Capacity</div>
+                <div class="col-sm-2">Students Enrolled</div>
+                <div class="col-sm-2">Status</div>
+                <div class="col-sm-2">Actions</div>
+            </div>
+        </div>
+        <div class="panel-body" id="CourseTable"></div>
+    </div>
+</div>

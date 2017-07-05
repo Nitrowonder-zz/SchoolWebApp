@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "ASP.NET",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
